@@ -1,0 +1,58 @@
+/* ControlPanel.css */
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.control-panel input {
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 300px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+.control-panel input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.control-panel button {
+    padding: 12px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+.control-panel button:hover {
+    background-color: #357ab8;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .control-panel input, .control-panel button {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .control-panel input, .control-panel button {
+        font-size: 0.9em;
+    }
+}

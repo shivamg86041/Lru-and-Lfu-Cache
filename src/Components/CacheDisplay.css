@@ -1,0 +1,67 @@
+/* CacheDisplay.css */
+.cache-display {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cache-display h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.toggle-view-button {
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-view-button:hover {
+    background-color: #357ab8;
+}
+
+.stack-view {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.block-view {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cache-item {
+    padding: 10px;
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+
+.cache-item.highlight {
+    border-color: #4a90e2;
+    background-color: #eaf3fe;
+}
+
+.cache-key {
+    font-weight: bold;
+}
+
+.cache-value {
+    color: #333;
+}

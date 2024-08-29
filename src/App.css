@@ -1,0 +1,71 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ }
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.navigation-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button {
+  background-color: #e94e77;
+}
+
+.back-button:hover {
+  background-color: #d43f63;
+}
+
+.next-button {
+  background-color: #4a90e2;
+}
+
+.next-button:hover {
+  background-color: #357ab8;
+}
+
+.caches {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.cache-display {
+  flex: 1;
+  margin: 10px;
+}
+
+.control-panel,
+.access-pattern-chart,
+.quiz {
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .caches {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .cache-display {
+      width: 100%;
+      max-width: 600px;
+  }
+}
